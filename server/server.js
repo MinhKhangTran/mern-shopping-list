@@ -29,9 +29,7 @@ if (process.env.NODE_ENV === "development") {
 app.use(cors());
 
 // Routes
-app.get("/", (req, res) => {
-  res.send("hi");
-});
+
 app.use("/api/a1/users", cors(), userRouter);
 app.use("/api/a1/shoppingItems", shoppingItemRouter);
 
