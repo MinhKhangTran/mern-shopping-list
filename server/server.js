@@ -31,7 +31,7 @@ app.use(cors());
 // Routes
 
 app.use("/api/a1/users", cors(), userRouter);
-app.use("/api/a1/shoppingItems", shoppingItemRouter);
+app.use("/api/a1/shoppingItems", cors(), shoppingItemRouter);
 
 // Middlewares
 app.use(errorHandler);
